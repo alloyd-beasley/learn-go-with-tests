@@ -19,7 +19,7 @@ func TestWallet(t *testing.T) {
 		if got == nil {
 			t.Fatal("no error received")
 		}
-
+		
 		if got != want {
 			t.Errorf("got %q, want %q", got, want)
 		}
@@ -30,7 +30,7 @@ func TestWallet(t *testing.T) {
 
 		if got != nil {
 			t.Fatal("got an error but did not want one")
-		}
+		}				
 	}
 
 	t.Run("Deposit", func(t *testing.T) {
